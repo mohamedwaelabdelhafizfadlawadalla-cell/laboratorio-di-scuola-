@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -13,8 +14,8 @@
       <div class="logo">Laboratorio di Elettronica</div>
       <ul>
         <li><a href="#home">Home</a></li>
-         
         <li><a href="#progetti">Progetti</a></li>
+        <li><a href="#esplora">Esplora</a></li>
         <li><a href="http://www.iisfalcone-righi.edu.it/" target="_blank">Contatti</a></li>
       </ul>
     </nav>
@@ -24,7 +25,7 @@
     <h1>Benvenuti nel nostro laboratorio</h1>
     <p>Il laboratorio di Elettronica dell'istituto TPSEE, dove impariamo progettando e costruendo.</p>
   </section>
-  
+
   <section id="progetti" class="section">
     <h2>I nostri progetti</h2>
     <div class="cards">
@@ -38,23 +39,24 @@
       </div>
     </div>
   </section>
-    <section id="esplora" class="section">
+
+  <section id="esplora" class="section">
     <h2>Esplora il laboratorio</h2>
-    <p>Clicca sui puntini per scoprire cosa c'è nel laboratorio.</p>
+    <p>Clicca sulle frecce per scoprire cosa c'è nel laboratorio.</p>
     <div class="panorama-container">
       <img src="foto%20laboratorio.jpg" alt="Panoramica del laboratorio" class="panorama-img">
 
-      <div class="hotspot" style="top: 40%; left: 42%;" onclick="mostraInfo('Lavagna Interattiva (LIM)', 'Usata dai docenti per le lezioni multimediali e le esercitazioni con la classe.')">+</div>
+      <div class="hotspot" style="top: 40%; left: 42%;" onclick="mostraInfo('Lavagna Interattiva (LIM)', 'Usata dai docenti per le lezioni multimediali e le esercitazioni con la classe.')">▲</div>
 
-      <div class="hotspot" style="top: 54%; left: 30%;" onclick="mostraInfo('Postazioni PC', 'Computer usati dagli studenti per progettazione, programmazione e ricerca.')">+</div>
+      <div class="hotspot" style="top: 54%; left: 30%;" onclick="mostraInfo('Postazioni PC', 'Computer usati dagli studenti per progettazione, programmazione e ricerca.')">▲</div>
 
-      <div class="hotspot" style="top: 40%; left: 63%;" onclick="mostraInfo('Armadi porta materiali', 'Contengono strumenti, componenti elettronici e materiale didattico del laboratorio.')">+</div>
+      <div class="hotspot" style="top: 40%; left: 63%;" onclick="mostraInfo('Armadi porta materiali', 'Contengono strumenti, componenti elettronici e materiale didattico del laboratorio.')">▲</div>
 
-      <div class="hotspot" style="top: 75%; left: 12%;" onclick="mostraInfo('Tavoli da lavoro', 'Postazioni modulari dove gli studenti lavorano in gruppo ai progetti.')">+</div>
+      <div class="hotspot" style="top: 75%; left: 12%;" onclick="mostraInfo('Tavoli da lavoro', 'Postazioni modulari dove gli studenti lavorano in gruppo ai progetti.')">▲</div>
 
-      <div class="hotspot" style="top: 21%; left: 6%;" onclick="mostraInfo('Pannelli decorativi', 'Elementi verdi che rendono l\'ambiente più accogliente e curato.')">+</div>
+      <div class="hotspot" style="top: 21%; left: 6%;" onclick="mostraInfo('Pannelli decorativi', 'Elementi verdi che rendono l\'ambiente più accogliente e curato.')">▲</div>
 
-      <div class="hotspot" style="top: 54%; left: 78%;" onclick="mostraInfo('Libreria e scaffali', 'Raccolta di libri e manuali tecnici consultabili dagli studenti.')">+</div>
+      <div class="hotspot" style="top: 54%; left: 78%;" onclick="mostraInfo('Libreria e scaffali', 'Raccolta di libri e manuali tecnici consultabili dagli studenti.')">▲</div>
     </div>
 
     <div id="info-box" class="info-box">
@@ -63,6 +65,10 @@
       <p id="info-testo"></p>
     </div>
   </section>
+
+  <footer>
+    <p>&copy; 2026 Laboratorio di Elettronica - TPSEE</p>
+  </footer>
 
   <script>
     function mostraInfo(titolo, testo) {
@@ -74,14 +80,6 @@
       document.getElementById('info-box').classList.remove('visibile');
     }
   </script>
-  <section id="contatti" class="section">
-    <h2>Contatti</h2>
-    <p>Il nostro laboratorio fa parte dell'IIS Falcone-Righi, Viale Italia 22/24, Corsico (MI).</p>
-    <p><a href="http://www.iisfalcone-righi.edu.it/" target="_blank" class="btn-link">Vai al sito della scuola</a></p>
-  </section>
-  <footer>
-    <p>&copy; 2026 Laboratorio di Elettronica - TPSEE</p>
-  </footer>
 
 </body>
 </html>
