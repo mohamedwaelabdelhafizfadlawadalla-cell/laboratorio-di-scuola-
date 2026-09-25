@@ -38,6 +38,42 @@
       </div>
     </div>
   </section>
+    <section id="esplora" class="section">
+    <h2>Esplora il laboratorio</h2>
+    <p>Clicca sui puntini per scoprire cosa c'è nel laboratorio.</p>
+    <div class="panorama-container">
+      <img src="foto%20laboratorio.jpg" alt="Panoramica del laboratorio" class="panorama-img">
+
+      <div class="hotspot" style="top: 40%; left: 42%;" onclick="mostraInfo('Lavagna Interattiva (LIM)', 'Usata dai docenti per le lezioni multimediali e le esercitazioni con la classe.')">+</div>
+
+      <div class="hotspot" style="top: 54%; left: 30%;" onclick="mostraInfo('Postazioni PC', 'Computer usati dagli studenti per progettazione, programmazione e ricerca.')">+</div>
+
+      <div class="hotspot" style="top: 40%; left: 63%;" onclick="mostraInfo('Armadi porta materiali', 'Contengono strumenti, componenti elettronici e materiale didattico del laboratorio.')">+</div>
+
+      <div class="hotspot" style="top: 75%; left: 12%;" onclick="mostraInfo('Tavoli da lavoro', 'Postazioni modulari dove gli studenti lavorano in gruppo ai progetti.')">+</div>
+
+      <div class="hotspot" style="top: 21%; left: 6%;" onclick="mostraInfo('Pannelli decorativi', 'Elementi verdi che rendono l\'ambiente più accogliente e curato.')">+</div>
+
+      <div class="hotspot" style="top: 54%; left: 78%;" onclick="mostraInfo('Libreria e scaffali', 'Raccolta di libri e manuali tecnici consultabili dagli studenti.')">+</div>
+    </div>
+
+    <div id="info-box" class="info-box">
+      <button class="chiudi-btn" onclick="chiudiInfo()">×</button>
+      <h3 id="info-titolo"></h3>
+      <p id="info-testo"></p>
+    </div>
+  </section>
+
+  <script>
+    function mostraInfo(titolo, testo) {
+      document.getElementById('info-titolo').innerText = titolo;
+      document.getElementById('info-testo').innerText = testo;
+      document.getElementById('info-box').classList.add('visibile');
+    }
+    function chiudiInfo() {
+      document.getElementById('info-box').classList.remove('visibile');
+    }
+  </script>
   <section id="contatti" class="section">
     <h2>Contatti</h2>
     <p>Il nostro laboratorio fa parte dell'IIS Falcone-Righi, Viale Italia 22/24, Corsico (MI).</p>
